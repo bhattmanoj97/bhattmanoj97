@@ -9,6 +9,7 @@ $token = "e4c17832f092a9041cbba1065e9dacaa";
 $query = array(
 	"Content-type" => "application/json" // Tell Shopify that we're expecting a response in JSON format
 );
+echo $shop;
 
 // Run API call to get products
 $products = shopify_call($token, $shop, "/admin/products.json", array(), 'GET');
